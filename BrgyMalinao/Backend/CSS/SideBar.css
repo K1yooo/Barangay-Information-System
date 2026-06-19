@@ -1,0 +1,145 @@
+.hamburger {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    background: none;
+    border: none;
+    color: #046908;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+.hamburger1 {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background: none;
+    border: none;
+    color: #046908;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 70px;
+    height: 60px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.logo-container span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #046908;
+}
+
+nav {
+    top: 0;
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 70px;
+    left: 0;
+    background: #ffffff;
+    transition: width 0.3s ease;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul.top-links {
+    flex-grow: 1;
+}
+
+nav ul.bottom-links {
+    margin-top: 170px;
+}
+
+nav ul li a {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #046908;
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.fa-solid {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.fa-hourglass-half {
+    padding-left: 4px;
+}
+
+nav ul li a .nav-item, .nav-item2 {
+    margin-left: 10px;
+    transition: visibility 0.3s ease, opacity 0.3s ease, width 0.3s ease; 
+    visibility: hidden;
+    opacity: 0;
+    white-space: nowrap;
+    display: inline-block;
+    width: 0; 
+}
+
+nav.expanded {
+    width: 250px;
+}
+
+nav.expanded ul li .nav-item, nav.expanded ul li .nav-item2 {
+    visibility: visible; 
+    opacity: 1; 
+    width: auto; 
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    width: 0; 
+    height: 2px; 
+    background-color: #046908; 
+    transition: width 0.3s ease, left 0.3s ease; 
+}
+
+nav ul li a:hover::after {
+    width: 100%; 
+    left: 0; 
+}
+
+nav.expanded ul li a::after {
+    left: 50%;
+}
+
+nav.expanded ul li a:hover::after {
+    width: 70%;
+    left: 20px;
+}

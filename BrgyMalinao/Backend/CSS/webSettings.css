@@ -1,0 +1,163 @@
+.modal11, .modal12, .modal21{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+
+
+#UpdateNews{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.modal-content11, .modal-content12, .modal-content21{
+    margin-top: 73px;
+    margin-left: 23.9%;
+    background-color: white;
+    border-radius: 8px;
+    width: 80%;
+    height: 80%;
+    max-width: 800px;
+    position: relative;
+    display: flex;
+}
+
+
+.modal-content20{
+    margin-top: 73px;
+    margin-left: 23.9%;
+    background-color: white;
+    border-radius: 8px;
+    width: 80%;
+    height: 80%;
+    max-width: 800px;
+    position: relative;
+    display: flex;
+    z-index: 1500;
+}
+
+.bg11, .bg12, .bg20, .bg21{
+    background-color: #046908;
+    width: 250px;
+    height: 100%;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.close-btn11, .close-btn12, .close-btn20, .close-btn21 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+
+.button11 {
+    padding: 10px;
+    width: 70px;
+    margin: 20px;
+    color: #fff;
+    background-color: #046908;
+    border-radius: 20px;
+    border: none;
+}
+.button12 {
+    padding-top: 15px;
+    padding: 10px;
+    width: 70px;
+    margin: 20px;
+    color: #fff;
+    background-color: #046908;
+    border-radius: 20px;
+    border: none;
+}
+
+.Scrollable-table11, .Scrollable-table12 {
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.Scrollable-table11 table, .Scrollable-table12 table {
+    width: 100%;
+}
+
+.Scrollable-table11 table th, .Scrollable-table12 table th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.button-blue11 {
+    font-size: 12px;
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #D8DBFB;
+    color: #2D34E7;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.button-red11 {
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 25px;
+    color: #E7472D;
+    background-color: #FBDCD8;
+}
+
+#add-link, #gallery-image, #update-link, #update-gallery-image {
+    width: 460px;
+}
+
+#add-content, #gallery-description, #update-content, #update-gallery-description {
+    width: 460px;
+    height: 150px;
+    max-width: 460px;
+    max-height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    resize: both; 
+    overflow: auto; 
+    box-sizing: border-box;
+    background-color: #F2F5F7;
+}
+
+.row21 {
+    display: flex;
+    margin-top: 70px;
+}
